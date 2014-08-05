@@ -1,11 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  background: #151515 url("../images/bkg.png") 0 0;
-  color: #eaeaea;
+  background: #EEEEEE;
+  color: #303030;
   font: 16px;
   line-height: 1.5;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-family: Georgia, 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', serif;
 }
 
 /* General & 'Reset' Stuff */
@@ -36,9 +36,9 @@ li {
 */
 
 header {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.1);
   width: 100%;
-  border-bottom: 1px dashed #b5e853;
+  border-bottom: 1px dashed #FF7F00;
   padding: 20px 0;
   margin: 0 0 40px 0;
 }
@@ -48,8 +48,8 @@ header h1 {
   line-height: 1.5;
   margin: 0 0 0 -40px;
   font-weight: bold;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: #b5e853;
+  font-family: Georgia, 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', serif;
+  color: #202020;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
                0 0 5px rgba(181, 232, 83, 0.1),
                0 0 10px rgba(181, 232, 83, 0.1);
@@ -87,8 +87,8 @@ section img {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: #b5e853;
+  font-family: Georgia, 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', serif;
+  color: #FF7F00;
   letter-spacing: -0.03em;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
                0 0 5px rgba(181, 232, 83, 0.1),
@@ -135,9 +135,9 @@ ul li {
 
 ul li:before {
   content: ">>";
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-family: Georgia, 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', serif;
   font-size: 13px;
-  color: #b5e853;
+  color: #FF7F00;
   margin-left: -37px;
   margin-right: 21px;
   line-height: 16px;
@@ -154,7 +154,7 @@ pre {
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 10px;
   font-size: 14px;
-  color: #b5e853;
+  color: #FF7F00;
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -227,7 +227,7 @@ hr {
 */
 
 a {
-  color: #63c0f5;
+  color: #113EDF;
   text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
 }
 

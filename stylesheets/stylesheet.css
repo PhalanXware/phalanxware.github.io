@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #EEEEEE;
+  background: #F4F4F4;
   color: #303030;
   font: 16px;
   line-height: 1.5;
@@ -38,7 +38,7 @@ li {
 header {
   background: rgba(255, 255, 255, 0.1);
   width: 100%;
-  border-bottom: 1px dashed #FF7F00;
+  border-bottom: 1px dashed #e24e43;
   padding: 20px 0;
   margin: 0 0 40px 0;
 }
@@ -49,7 +49,7 @@ header h1 {
   margin: 0 0 0 -40px;
   font-weight: bold;
   font-family: Georgia, 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', serif;
-  color: #202020;
+  color: #303030;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
                0 0 5px rgba(50, 50, 50, 0.1),
                0 0 10px rgba(50, 50, 50, 0.1);
@@ -65,7 +65,7 @@ header h1:before {
 header h2 {
   font-size: 18px;
   font-weight: 300;
-  color: #666;
+  color: #303030;
 }
 
 #downloads .btn {
@@ -88,7 +88,7 @@ section img {
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-family: Georgia, 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', serif;
-  color: #FF7F00;
+  color: #e24e43;
   letter-spacing: -0.03em;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
                0 0 5px rgba(181, 232, 83, 0.1),
@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
 #main_content h6 {
   font-size: 12px;
   text-transform: uppercase;
-  color: #999;
+  color: #303030;
   margin: 0 0 5px 0;
 }
 
@@ -137,14 +137,14 @@ ul li:before {
   content: ">>";
   font-family: Georgia, 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', serif;
   font-size: 13px;
-  color: #FF7F00;
+  color: #e24e43;
   margin-left: -37px;
   margin-right: 21px;
   line-height: 16px;
 }
 
 blockquote {
-  color: #aaa;
+  color: #303030;
   padding-left: 10px;
   border-left: 1px dotted #666;
 }
@@ -154,7 +154,7 @@ pre {
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 10px;
   font-size: 14px;
-  color: #FF7F00;
+  color: #e24e43;
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;

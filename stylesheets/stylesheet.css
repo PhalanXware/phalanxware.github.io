@@ -3,7 +3,7 @@ body {
   padding: 0;
   background: #F4F4F4;
   color: #303030;
-  font: 16px;
+  font-size: 16px;
   line-height: 1.5;
   font-family: Georgia, 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', serif;
 }
@@ -26,7 +26,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 li {
-  line-height: 1.4 ;
+  // line-height: 1.4 ;
+  margin: 0 0 10px;
+  font-size: 14px;
 }
 
 /* Header, <header>
@@ -224,11 +226,11 @@ hr {
 
 /* Links
    a, a:hover, a:visited
-*/
+ */
 
 a {
-  color: #113EDF;
-  text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
+  color: #303030;
+  text-shadow: 0 0 5px rgba(48, 48, 47, 0.5);
 }
 
 /* Clearfix */

@@ -66,3 +66,9 @@
 .type-csharp .highlight .nn { color: #000000 }
 .type-csharp .highlight .s { color: #A31515 }
 .type-csharp .highlight .sc { color: #A31515 }
+
+
+.sns {
+  width: 1.25em;
+  height: 1.25em;
+}

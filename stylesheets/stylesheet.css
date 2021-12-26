@@ -183,8 +183,8 @@ td {
 hr {
   height: 0;
   border: 0;
-  border-bottom: 1px dashed #b5e853;
-  color: #b5e853;
+  border-bottom: 1px dashed #e24e43;
+  color: #e24243;
 }
 
 /* Buttons
@@ -245,4 +245,14 @@ a {
 
 .cf {
   zoom:1;
+}
+
+p {
+  margin-left : 1em ;
+  margin-right : 1em ;
+}
+
+p.office {
+  font-size: 0.75em;
+  font-family: monospace;
 }

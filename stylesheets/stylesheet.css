@@ -64,9 +64,9 @@ header h1 {
   margin: 0 0 0 -40px;
   font-weight: bold;
   color: #303030;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-  0 0 5px rgba(50, 50, 50, 0.1),
-  0 0 10px rgba(50, 50, 50, 0.1);
+  // text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+  // 0 0 5px rgba(50, 50, 50, 0.1),
+  // 0 0 10px rgba(50, 50, 50, 0.1);
   letter-spacing: -1px;
   -webkit-font-smoothing: antialiased;
 }
@@ -103,9 +103,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   color: #e24e43;
   letter-spacing: -0.03em;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
 }
 
 #main_content h1 {
@@ -147,7 +144,7 @@ ul li {
 }
 
 ul li:before {
-  content: ">>";
+  content: ">";
   font-size: 17px;
   color: #e24e43;
   margin-left: -37px;
@@ -206,8 +203,7 @@ hr {
   padding: 8px 18px;
   border-radius: 50px;
   border: 2px solid rgba(0, 0, 0, 0.7);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.7);
-  border-top: 2px solid rgba(0, 0, 0, 1);
+  border-top-color: rgba(0, 0, 0, 1);
   color: rgba(255, 255, 255, 0.8);
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -240,6 +236,14 @@ hr {
 
 a {
   color: #303030;
+  text-decoration: none;
+  border-bottom: 1px dotted red;
+}
+
+a:visited {
+  color: #303030;
+  text-decoration: none;
+  border-bottom: 1px dotted #303030;
 }
 
 /* Clearfix */

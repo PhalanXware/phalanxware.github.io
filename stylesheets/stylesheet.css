@@ -72,7 +72,6 @@ header h1 {
 }
 
 header h1:before {
-  content: "./ ";
   font-size: 28px;
 }
 
@@ -167,7 +166,8 @@ pre {
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
-  text-wrap: normal;
+  white-space: pre;
+  overflow-wrap: normal;
   overflow: auto;
   overflow-y: hidden;
 }
@@ -199,7 +199,7 @@ hr {
 
 .btn {
   display: inline-block;
-  background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.3), rgba(35, 35, 35, 0.3) 50%, rgba(10, 10, 10, 0.3) 50%, rgba(0, 0, 0, 0.3));
+  background: linear-gradient(to bottom, rgba(40, 40, 40, 0.3), rgba(35, 35, 35, 0.3) 50%, rgba(10, 10, 10, 0.3) 50%, rgba(0, 0, 0, 0.3));
   padding: 8px 18px;
   border-radius: 50px;
   border: 2px solid rgba(0, 0, 0, 0.7);
@@ -214,7 +214,7 @@ hr {
 }
 
 .btn:hover {
-  background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.6), rgba(35, 35, 35, 0.6) 50%, rgba(10, 10, 10, 0.8) 50%, rgba(0, 0, 0, 0.8));
+  background: linear-gradient(to bottom, rgba(40, 40, 40, 0.6), rgba(35, 35, 35, 0.6) 50%, rgba(10, 10, 10, 0.8) 50%, rgba(0, 0, 0, 0.8));
 }
 
 .btn .icon {
@@ -237,13 +237,18 @@ hr {
 a {
   color: #303030;
   text-decoration: none;
-  border-bottom: 1px dotted red;
+  border-bottom: 1px dotted #47a9ff;
 }
 
 a:visited {
   color: #303030;
   text-decoration: none;
-  border-bottom: 1px dotted #303030;
+  border-bottom: 1px dotted #1e4c8a;
+}
+
+a:hover {
+  color: #47a9ff;
+  border-bottom: 1px dotted #47a9ff;
 }
 
 /* Clearfix */
@@ -273,4 +278,88 @@ p.office {
 
 p.info {
   font-size: small;
+}
+
+/* SNS icons - Desktop: simple inline style, Mobile: button style */
+.sns-container {
+  margin: 1em;
+}
+
+/* Desktop default - simple inline style */
+.sns-button {
+  display: inline;
+  padding: 0;
+  margin: 0 4px;
+  background: transparent;
+  border: none;
+  text-decoration: none;
+  transition: none;
+  min-width: auto;
+  box-shadow: none;
+}
+
+.sns-button img.sns {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  display: inline;
+  margin-bottom: 0;
+}
+
+.sns-button .sns-name {
+  display: none;
+}
+
+.sns-button:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: transparent;
+  background: transparent;
+}
+
+/* Mobile optimization - button style */
+@media screen and (max-width: 768px) {
+  .sns-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .sns-button {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 18px;
+    background: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    min-width: 110px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sns-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border-color: #e24e43;
+    background: #fff5f5;
+  }
+  
+  .sns-button img.sns {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .sns-button .sns-name {
+    display: block;
+    font-size: 13px;
+    color: #303030;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+  }
 }

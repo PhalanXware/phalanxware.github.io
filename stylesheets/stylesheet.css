@@ -61,7 +61,7 @@ footer {
 header h1 {
   font-size: 34px;
   line-height: 1.5;
-  margin: 0 0 0 -40px;
+  margin: 0;
   font-weight: bold;
   color: #303030;
   // text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
@@ -319,24 +319,29 @@ p.info {
 
 /* Mobile optimization - button style */
 @media screen and (max-width: 768px) {
+  header h1 {
+    margin: 0;
+  }
+
   .sns-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 10px;
   }
   
   .sns-button {
     display: inline-flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    padding: 14px 18px;
+    justify-content: flex-start;
+    padding: 14px 16px;
     background: #ffffff;
     border: 2px solid #e0e0e0;
     border-radius: 12px;
     text-decoration: none;
     transition: all 0.3s ease;
-    min-width: 110px;
+    width: 100%;
+    box-sizing: border-box;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
@@ -350,16 +355,21 @@ p.info {
   .sns-button img.sns {
     width: 48px;
     height: 48px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
+    margin-right: 10px;
     display: block;
   }
   
   .sns-button .sns-name {
-    display: block;
-    font-size: 13px;
+    display: inline;
+    font-size: 16px;
     color: #303030;
     font-weight: 500;
-    text-align: center;
+    text-align: left;
     white-space: nowrap;
+  }
+
+  .sns-button .sns-name::before {
+    content: ": ";
   }
 }
